@@ -13,6 +13,10 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
         {
+            path: '/',
+            redirect: '/task',
+        },
+        {
             path: '/task',
             name: 'task',
             component: () => import('./components/task/Task.vue'),
